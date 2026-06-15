@@ -62,7 +62,7 @@ docker compose -f docker-compose.local.yml logs -f sub2api
 docker compose -f docker-compose.local.yml logs sub2api | grep "admin password"
 
 # Access Web UI
-# http://localhost:8080
+# http://localhost:18328
 ```
 
 ### Method 2: Manual Deployment
@@ -94,7 +94,7 @@ docker compose -f docker-compose.local.yml up -d
 docker compose -f docker-compose.local.yml logs -f sub2api
 
 # Access Web UI
-# http://localhost:8080
+# http://localhost:18328
 ```
 
 ### Deployment Version Comparison

@@ -7,7 +7,7 @@
 # Usage:
 #   1. Copy .env.example to .env and configure database/redis connection
 #   2. docker-compose -f docker-compose.standalone.yml up -d
-#   3. Access: http://localhost:8080
+#   3. Access: http://localhost:18328
 # =============================================================================
 
 services:
@@ -20,7 +20,7 @@ services:
         soft: 100000
         hard: 100000
     ports:
-      - "${BIND_HOST:-0.0.0.0}:${SERVER_PORT:-8080}:8080"
+      - "${BIND_HOST:-0.0.0.0}:${SERVER_PORT:-18328}:8080"
     volumes:
       - sub2api_data:/app/data
     extra_hosts:

@@ -191,7 +191,7 @@ sudo systemctl start sub2api
 sudo systemctl enable sub2api
 
 # 3. Open Setup Wizard in browser
-# http://YOUR_SERVER_IP:8080
+# http://YOUR_SERVER_IP:18328
 ```
 
 The Setup Wizard will guide you through:
@@ -293,7 +293,7 @@ ADMIN_EMAIL=admin@example.com
 ADMIN_PASSWORD=your_admin_password
 
 # Optional: Custom port
-SERVER_PORT=8080
+SERVER_PORT=18328
 ```
 
 **Generate secure secrets:**
@@ -337,7 +337,7 @@ docker compose -f docker-compose.local.yml logs -f sub2api
 
 #### Access
 
-Open `http://YOUR_SERVER_IP:8080` in your browser.
+Open `http://YOUR_SERVER_IP:18328` in your browser.
 
 If admin password was auto-generated, find it in logs:
 ```bash
